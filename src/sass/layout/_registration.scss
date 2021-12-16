@@ -1,0 +1,117 @@
+.registration.box {
+  display: flex;
+  justify-content: space-between;
+}
+.title.registration {
+  margin-bottom: 30px;
+}
+.registration__left-side {
+  padding-top: 32px;
+}
+.registration.desc {
+  display: flex;
+  padding-top: 0;
+  align-items: center;
+  padding-left: 28px;
+  border-left: 2px solid var(--accent-color);
+}
+.registration.content {
+  font-family: var(--main-page-font);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+.content__icon {
+  margin-left: 15px;
+}
+.registration.explain {
+  width: 383px;
+  height: 84px;
+  margin-top: 31px;
+  margin-bottom: 30px;
+}
+.registration.text {
+  @include font;
+}
+.registration.plase {
+  font-family: var(--second-page-font);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+}
+.registration.list__plase__icon {
+  display: flex;
+  align-items: center;
+}
+.registration.list__plase__item:not(:last-child) {
+  margin-right: 3px;
+}
+
+.plase__icon {
+  fill: #9d9d98;
+}
+.registration.list__plase__item.active .plase__icon {
+  fill: var(--accent-color);
+}
+
+.registration__right-side {
+  width: 585px;
+  height: 529px;
+  background: rgba(57, 57, 54, 0.03);
+  padding: 69px 89px;
+  margin-left: 100px;
+  border-top: 2px solid #ff6f41;
+}
+.title.form {
+  font-family: var(--main-page-font);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 21px;
+}
+.registration.form__desc {
+  font-family: var(--second-page-font);
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 24px;
+}
+.registration.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.registration.form__input {
+  width: 406px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: var(--white-color);
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 200px;
+  padding: 12px 5px 12px 26px;
+  font-family: var(--second-page-font);
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.25%;
+  color: #9c9c9a;
+
+  &:hover,
+  &:focus{
+    border: 2px solid var(--accent-color);
+  }
+}
+
+.btn.registration {
+  width: 406px;
+}

@@ -1,0 +1,14 @@
+.title {
+  font-family: var(--main-page-font);
+  font-weight: normal;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 320px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    font-size: 57px;
+  }
+}

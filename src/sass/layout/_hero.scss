@@ -1,0 +1,110 @@
+.hero.container {
+  display: flex;
+  align-items: center;
+}
+.hero__left-side {
+  padding-top: 30px;
+  margin-right: 42px;
+}
+.hero__right-side {
+  padding-top: 19px;
+}
+.study.content {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  padding-left: 27px;
+  border-left: 2px solid #ff5a26;
+}
+.study.content__text {
+  font-family: var(--main-page-font);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--primary-text-color);
+}
+.study.content__box {
+  position: relative;
+  width: 153px;
+  height: 100px;
+  margin-right: 18px;
+}
+.study.card-founder {
+  margin-top: 81px;
+}
+.study.card-founder__picture {
+  width: 159px;
+  height: 202px;
+}
+.study.card-founder__desc {
+  width: 160px;
+  height: 64px;
+  margin-top: 40px;
+  margin-bottom: 37px;
+}
+.study.card-founder__text {
+  font-family: var(--second-page-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+}
+.button.link-hero {
+  font-family: var(--second-page-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  color: var(--primary-text-color);
+  border: none;
+  background: var(--white-color);
+  cursor: pointer;
+}
+.btn.hero {
+  margin-top: 66px;
+  width: 161px;
+  padding: 12px 33px 12px 33px;
+}
+.hero_title {
+  font-family: var(--main-page-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 1.15;
+  color: var(--primary-text-color);
+  margin-bottom: 63px;
+}
+.lawyer.hero__img {
+  width: 877px;
+  height: 359px;
+}
+
+.lawyer.picture {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.lawyer.hero__icon {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.lawyer.hero__desc {
+  width: 666px;
+  height: 86px;
+  @include font;
+}
+.lawyer.hero__arrows {
+  position: absolute;
+  top: 45px;
+  left: -39px;
+}
+.lawyer.hero__arrows-vertical {
+  position: absolute;
+  top: 348px;
+  left: 759px;
+  transform: rotate(-90deg);
+}
