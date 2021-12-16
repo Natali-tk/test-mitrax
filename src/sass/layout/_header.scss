@@ -16,7 +16,7 @@
 }
 .navigation__list {
   display: flex;
-  margin-right: 296px;
+  margin-right: 225px;
 }
 .navigation__list-item:not(:last-child) {
   margin-right: 25px;
@@ -36,22 +36,21 @@
   text-decoration-line: underline;
   }
 }
-
 .navigation__list-link.active{
   color: var(--accent-color);
   text-decoration-line: underline;
 }
-
 .button.link-header {
   font-family: var(--second-page-font);
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
-  line-height: 95%;
+  line-height: 0.95;
   text-align: right;
   text-decoration-line: underline;
   color:var(--accent-color);
   border: none;
   background:var(--white-color);
   cursor: pointer;
+  
 }
