@@ -184,55 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\TTCommons-Regular.woff":[["TTCommons-Regular.c35077ce.woff","fonts/TTCommons-Regular.woff"],"fonts/TTCommons-Regular.woff"],"./..\\fonts\\TTCommons-DemiBold.woff":[["TTCommons-DemiBold.efa1597e.woff","fonts/TTCommons-DemiBold.woff"],"fonts/TTCommons-DemiBold.woff"],"./..\\fonts\\TTCommons-Bold.woff":[["TTCommons-Bold.b065e944.woff","fonts/TTCommons-Bold.woff"],"fonts/TTCommons-Bold.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/menu.js":[function(require,module,exports) {
-var menuBtnRef = document.querySelector("[data-menu-button]");
-var mobileMenuRef = document.querySelector("[data-menu]");
-menuBtnRef.addEventListener("click", function () {
-  var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-  menuBtnRef.classList.toggle("is-open");
-  menuBtnRef.setAttribute("aria-expanded", !expanded);
-  mobileMenuRef.classList.toggle("is-open");
-});
-},{}],"js/module.js":[function(require,module,exports) {
-var refs = {
-  controls: document.querySelector('#tabs-1 [data-controls]'),
-  modules: document.querySelector('#tabs-1 [data-modules]')
-};
-refs.controls.addEventListener("click", function (event) {
-  event.preventDefault();
-  if (event.target.nodeName !== 'A') return;
-  var currentActiveControlItem = refs.controls.querySelector('.active');
-
-  if (currentActiveControlItem) {
-    currentActiveControlItem.classList.remove('active');
-
-    var _moduleId = currentActiveControlItem.getAttribute('href').slice(1);
-
-    var _module = refs.modules.querySelector("#".concat(_moduleId));
-
-    _module.classList.remove('active');
-  }
-
-  var controlItem = event.target;
-  controlItem.classList.add('active');
-  var moduleId = controlItem.getAttribute('href').slice(1);
-  var module = refs.modules.querySelector("#".concat(moduleId));
-  module.classList.add('active');
-});
-},{}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-
-require("./js/menu");
-
-require("./js/module");
-},{"./sass/main.scss":"sass/main.scss","./js/menu":"js/menu.js","./js/module":"js/module.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./TTCommons-Bold.eot":[["TTCommons-Bold.6f5a7987.eot","fonts/TTCommons-Bold.eot"],"fonts/TTCommons-Bold.eot"],"./TTCommons-Bold.woff2":[["TTCommons-Bold.335401ec.woff2","fonts/TTCommons-Bold.woff2"],"fonts/TTCommons-Bold.woff2"],"./TTCommons-Bold.woff":[["TTCommons-Bold.b065e944.woff","fonts/TTCommons-Bold.woff"],"fonts/TTCommons-Bold.woff"],"./TTCommons-Bold.ttf":[["TTCommons-Bold.0a0f913f.ttf","fonts/TTCommons-Bold.ttf"],"fonts/TTCommons-Bold.ttf"],"./TTCommons-Regular.eot":[["TTCommons-Regular.e719559c.eot","fonts/TTCommons-Regular.eot"],"fonts/TTCommons-Regular.eot"],"./TTCommons-Regular.woff2":[["TTCommons-Regular.bfefb65c.woff2","fonts/TTCommons-Regular.woff2"],"fonts/TTCommons-Regular.woff2"],"./TTCommons-Regular.woff":[["TTCommons-Regular.c35077ce.woff","fonts/TTCommons-Regular.woff"],"fonts/TTCommons-Regular.woff"],"./TTCommons-Regular.ttf":[["TTCommons-Regular.9c10a5f8.ttf","fonts/TTCommons-Regular.ttf"],"fonts/TTCommons-Regular.ttf"],"./TTCommons-DemiBold.eot":[["TTCommons-DemiBold.796f43ae.eot","fonts/TTCommons-DemiBold.eot"],"fonts/TTCommons-DemiBold.eot"],"./TTCommons-DemiBold.woff2":[["TTCommons-DemiBold.b54400ec.woff2","fonts/TTCommons-DemiBold.woff2"],"fonts/TTCommons-DemiBold.woff2"],"./TTCommons-DemiBold.woff":[["TTCommons-DemiBold.efa1597e.woff","fonts/TTCommons-DemiBold.woff"],"fonts/TTCommons-DemiBold.woff"],"./TTCommons-DemiBold.ttf":[["TTCommons-DemiBold.46a5269f.ttf","fonts/TTCommons-DemiBold.ttf"],"fonts/TTCommons-DemiBold.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -260,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63605" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57073" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -436,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/stylesheet.ccbd4315.js.map
