@@ -189,92 +189,11 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\TTCommons-Regular.woff":[["TTCommons-Regular.c35077ce.woff","fonts/TTCommons-Regular.woff"],"fonts/TTCommons-Regular.woff"],"./..\\fonts\\TTCommons-DemiBold.woff":[["TTCommons-DemiBold.efa1597e.woff","fonts/TTCommons-DemiBold.woff"],"fonts/TTCommons-DemiBold.woff"],"./..\\fonts\\TTCommons-Bold.woff":[["TTCommons-Bold.b065e944.woff","fonts/TTCommons-Bold.woff"],"fonts/TTCommons-Bold.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/menu.js":[function(require,module,exports) {
-var menuBtnRef = document.querySelector('[data-menu-button]');
-var mobileMenuRef = document.querySelector('[data-menu]');
-menuBtnRef.addEventListener('click', function () {
-  var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-  menuBtnRef.classList.toggle('is-open');
-  menuBtnRef.setAttribute('aria-expanded', !expanded);
-  mobileMenuRef.classList.toggle('is-open');
-});
-},{}],"js/module.js":[function(require,module,exports) {
-var refs = {
-  controlsBtn: document.querySelector('#tabs-1 [data-controls-btn]'),
-  controls: document.querySelector('#tabs-1 [data-controls-link]'),
-  modules: document.querySelector('#tabs-1 [data-modules]')
-};
-refs.controlsBtn.addEventListener('click', onClickTabsBtn);
-refs.controls.addEventListener('click', onClickTabsLink);
-
-function onClickTabsBtn(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== 'A') return;
-  var currentActiveControlItem = refs.controlsBtn.querySelector('.active');
-
-  if (currentActiveControlItem) {
-    currentActiveControlItem.classList.remove('active');
-
-    var _moduleId = currentActiveControlItem.getAttribute('href').slice(1);
-
-    var _module = refs.modules.querySelector("#".concat(_moduleId));
-
-    _module.classList.remove('active');
-  }
-
-  var controlItem = event.target;
-  controlItem.classList.add('active');
-  var moduleId = controlItem.getAttribute('href').slice(1);
-  var module = refs.modules.querySelector("#".concat(moduleId));
-  module.classList.add('active');
-}
-
-function onClickTabsLink(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== 'P' && event.target.nodeName !== 'A') return;
-  var currentActiveControlItem = refs.controls.querySelector('.link-active');
-  console.log(currentActiveControlItem);
-
-  if (currentActiveControlItem) {
-    currentActiveControlItem.classList.remove('link-active');
-
-    var _moduleId2 = currentActiveControlItem.getAttribute('href').slice(1);
-
-    var _module2 = refs.modules.querySelector("#".concat(_moduleId2));
-
-    _module2.classList.remove('active');
-  }
-
-  var controlItem = event.target.parentNode;
-  controlItem.classList.add('link-active');
-  var moduleId = controlItem.getAttribute('href').slice(1);
-  var module = refs.modules.querySelector("#".concat(moduleId));
-  module.classList.add('active');
-}
-},{}],"js/modal.js":[function(require,module,exports) {
-var refs = {
-  openModalBtn: document.querySelector('[data-modal-open]'),
-  closeModalBtn: document.querySelector('[data-modal-close]'),
-  modal: document.querySelector('[data-modal]')
-};
-refs.openModalBtn.addEventListener('click', toggleModal);
-refs.closeModalBtn.addEventListener('click', toggleModal);
-
-function toggleModal() {
-  document.body.classList.toggle("modal-open");
-  refs.modal.classList.toggle('is-hidden');
-}
-},{}],"index.js":[function(require,module,exports) {
+},{"./..\\fonts\\TTCommons-Regular.woff":[["TTCommons-Regular.c35077ce.woff","fonts/TTCommons-Regular.woff"],"fonts/TTCommons-Regular.woff"],"./..\\fonts\\TTCommons-DemiBold.woff":[["TTCommons-DemiBold.efa1597e.woff","fonts/TTCommons-DemiBold.woff"],"fonts/TTCommons-DemiBold.woff"],"./..\\fonts\\TTCommons-Bold.woff":[["TTCommons-Bold.b065e944.woff","fonts/TTCommons-Bold.woff"],"fonts/TTCommons-Bold.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"success.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
-
-require("./js/menu");
-
-require("./js/module");
-
-require("./js/modal");
-},{"./sass/main.scss":"sass/main.scss","./js/menu":"js/menu.js","./js/module":"js/module.js","./js/modal":"js/modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -478,5 +397,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","success.js"], null)
+//# sourceMappingURL=/success.820a777e.js.map
