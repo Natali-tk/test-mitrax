@@ -4,11 +4,11 @@
   line-height: 1.25;
   color: var(--primary-text-color);
 
-  @media screen and (min-width: 320px) {
-    font-size: 32px;
+  @media screen and (min-width: 441px) {
+    font-size: 30px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1211px) {
     font-size: 57px;
   }
 }

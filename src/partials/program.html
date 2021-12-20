@@ -4,17 +4,92 @@
       Програма курсу <br />
       складається з 5 модулів
     </h2>
-    <div class="program section__box">
+
+    <div class="program tabs" id="tabs-1">
+      <div class="controls" >
+        <div class="controls-tabs_btn" data-controls-btn>
+          <a href="#module1" class="program list_item active">Модуль 1</a>
+          <a href="#module2" class="program list_item">Модуль 2</a>
+          <a href="#module3" class="program list_item">Модуль 3</a>
+          <a href="#module4" class="program list_item">Модуль 4</a>
+          <a href="#module5" class="program list_item">Модуль 5</a>
+        </div>
+        <div class="controls-tabs_item" data-controls-link>
+          <a href="#module1" class="program list_link link-active">
+            <p class="program module-list__module">Модуль 1</p>
+            <p class="program module-list__name">Сімейні відносини. Шлюб</p>
+          </a>
+          <a href="#module2" class="program list_link">
+            <p class="program module-list__module">Модуль 2</p>
+            <p class="program module-list__name">
+              Майнові відносини у сімейному праві
+            </p>
+          </a>
+          <a href="#module3" class="program list_link">
+            <p class="program module-list__module">Модуль 3</p>
+            <p class="program module-list__name">Батьки та діти</p>
+          </a>
+          <a href="#module4" class="program list_link">
+            <p class="program module-list__module">Модуль 4</p>
+            <p class="program module-list__name">Судові сімейні спори</p>
+          </a>
+          <a href="#module5" class="program list_link">
+            <p class="program module-list__module">Модуль 5</p>
+            <p class="program module-list__name">Залучення клієнтів</p>
+          </a>
+        </div>
+      </div>
       <div class="program__left-side">
-        <img
-          class="program section__icon"
-          src="./images//group.svg"
-          alt="group"
-          width="108"
-          height="100"
-        />
-        <p class="program section__sign">2 заняття</p>
-        <p class="program section__module">Сімейні відносини. Шлюб</p>
+        <div class="program section__box" data-modules>
+          <div class="module active" id="module1">
+            <img
+              class="program section__icon"
+              src="./images//module1.svg"
+              alt="module"
+            />
+            <p class="program section__sign">2 заняття</p>
+            <p class="program section__module">Сімейні відносини. Шлюб</p>
+          </div>
+          <div class="module" id="module2">
+            <img
+              class="program section__icon"
+              src="./images//module2.svg"
+              alt="module"
+            />
+            <p class="program section__sign">2 заняття</p>
+            <p class="program section__module">
+              Майнові відносини у сімейному праві
+            </p>
+          </div>
+          <div class="module" id="module3">
+            <img
+              class="program section__icon"
+              src="./images//module3.svg"
+              alt="module"
+            />
+            <p class="program section__sign">2 заняття</p>
+            <p class="program section__module">Батьки та діти</p>
+          </div>
+          <div class="module" id="module4">
+            <img
+              class="program section__icon"
+              src="./images//module4.svg"
+              alt="module"
+            />
+            <p class="program section__sign">2 заняття</p>
+            <p class="program section__module">Судові сімейні спори</p>
+          </div>
+          <div class="module" id="module5">
+            <img
+              class="program section__icon"
+              src="./images//module5.svg"
+              alt="module"
+            />
+            <p class="program section__sign">2 заняття</p>
+            <p class="program section__module">Залучення клієнтів</p>
+          </div>
+        </div>
+
         <div class="program section__lessons">
           <ul class="program lessons-list">
             <li class="program lessons-list__item">
@@ -28,34 +103,8 @@
               недійсним або неукладеним.
             </li>
           </ul>
+          <button class="btn program" type="button">Записатися на курс</button>
         </div>
-        <button class="btn program" type="button">Записатися на курс</button>
-      </div>
-      <div class="program__right-side">
-        <ul class="program module-list">
-          <li class="program module-list__item active">
-            <p class="program module-list__module">Модуль 1</p>
-            <p class="program module-list__name">Сімейні відносини. Шлюб</p>
-          </li>
-          <li class="program module-list__item">
-            <p class="program module-list__module">Модуль 2</p>
-            <p class="program module-list__name">
-              Майнові відносини у сімейному праві
-            </p>
-          </li>
-          <li class="program module-list__item">
-            <p class="program module-list__module">Модуль 3</p>
-            <p class="program module-list__name">Батьки та діти</p>
-          </li>
-          <li class="program module-list__item">
-            <p class="program module-list__module">Модуль 4</p>
-            <p class="program module-list__name">Судові сімейні спори</p>
-          </li>
-          <li class="program module-list__item">
-            <p class="program module-list__module">Модуль 5</p>
-            <p class="program module-list__name">Залучення клієнтів</p>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

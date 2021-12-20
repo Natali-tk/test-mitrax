@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+}
+
+.logo_icon {
+  width: 134px;
+  height: 30px;
+  @media screen and (min-width: 1211px) {
+    width: 160px;
+    height: 36px;
+  }
+}

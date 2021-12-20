@@ -25,7 +25,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 body {
+  font-family: "Merriweather", "TT Commons", sans-serif;
+  animation-duration: 1000ms;
   scroll-behavior: smooth;
+  &.modal-open {
+    overflow: hidden;
+  }
 }

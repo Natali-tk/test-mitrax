@@ -1,32 +1,49 @@
-<!-- HEADER-->
+<!-- Header-->
 <header class="header">
   <div class="container">
-    <nav class="navigation">
+    <div class="header_box">
       <!-- Logo -->
-      <a class="logo" href="/" aria-label="логотип сайта">
-        <svg class="logo_icon" width="160" height="36">
+      <a class="logo" href="#" aria-label="логотип сайта">
+        <svg class="logo_icon">
           <use href="./images//sprite.svg#icon-logo"></use>
         </svg>
       </a>
       <!-- Navigation -->
-      <ul class="navigation__list list">
-        <li class="navigation__list-item">
-          <a class="navigation__list-link link" href="#">Особливості </a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__list-link link" href="#">Автор курсу</a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__list-link link" href="#">Програма</a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__list-link link" href="#">Записатись</a>
-        </li>
-      </ul>
-      <!-- Feedback -->
-      <button class="button link-header" type="button">
-        Зворотній зв’язок
+      <button class="menu-button" data-menu-button type="button">
+        <svg class="burger_icon">
+          <use
+            class="menu-button__icon-menu"
+            href="./images//sprite.svg#icon-burger"
+          ></use>
+          <use
+            class="menu-button__icon-close"
+            href="./images//sprite.svg#icon-close"
+          ></use>
+        </svg>
       </button>
+    </div>
+    <nav>
+      <div class="header__menu" data-menu>
+        <ul class="navigation__list list">
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="#">Особливості</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="#">Автор курсу</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="#program">Програма</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="#registration"
+              >Записатись</a
+            >
+          </li>
+        </ul>
+        <button class="button link-header" type="button" data-modal-open>
+          Зворотній зв’язок
+        </button>
+      </div>
     </nav>
   </div>
 </header>
