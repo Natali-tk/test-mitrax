@@ -68,9 +68,17 @@ img {
   height: auto;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Merriweather", "TT Commons", sans-serif;
+  animation-duration: 1000ms;
   scroll-behavior: smooth;
+}
+body.modal-open {
+  overflow: hidden;
 }
 
 .container {
@@ -185,19 +193,10 @@ body {
     justify-content: space-between;
   }
 
-  .menu-button {
-    position: relative;
-    width: 42px;
-    height: 42px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-  }
-
   .burger_icon {
     position: absolute;
-    width: 13px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -205,6 +204,7 @@ body {
   }
 
   .menu-button {
+    position: relative;
     display: inline-flex;
     padding: 0;
     margin-left: auto;
@@ -215,7 +215,10 @@ body {
     border-radius: 50%;
     background-color: var(--accent-color);
     scale: 0.9;
-    transition: color 250ms var(--timing-function);
+    transition: scale 250ms var(--timing-function);
+  }
+  .menu-button:hover {
+    scale: 1;
   }
 
   .menu-button__icon-close {
@@ -441,6 +444,10 @@ body {
 
   .study.card-founder__picture {
     margin-right: 51px;
+  }
+
+  .lawyer.hero__arrows {
+    display: none;
   }
 }
 @media screen and (min-width: 1211px) {
@@ -931,7 +938,6 @@ body {
     padding: 40px 20px;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
   }
 }
 @media screen and (min-width: 1211px) {

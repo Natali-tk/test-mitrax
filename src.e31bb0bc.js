@@ -192,11 +192,16 @@ module.hot.accept(reloadCSS);
 },{"./..\\fonts\\TTCommons-Regular.woff":[["TTCommons-Regular.c35077ce.woff","fonts/TTCommons-Regular.woff"],"fonts/TTCommons-Regular.woff"],"./..\\fonts\\TTCommons-DemiBold.woff":[["TTCommons-DemiBold.efa1597e.woff","fonts/TTCommons-DemiBold.woff"],"fonts/TTCommons-DemiBold.woff"],"./..\\fonts\\TTCommons-Bold.woff":[["TTCommons-Bold.b065e944.woff","fonts/TTCommons-Bold.woff"],"fonts/TTCommons-Bold.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/menu.js":[function(require,module,exports) {
 var menuBtnRef = document.querySelector('[data-menu-button]');
 var mobileMenuRef = document.querySelector('[data-menu]');
+var openModalBtn = document.querySelector('[data-modal-open]');
 menuBtnRef.addEventListener('click', function () {
   var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
   menuBtnRef.classList.toggle('is-open');
   menuBtnRef.setAttribute('aria-expanded', !expanded);
   mobileMenuRef.classList.toggle('is-open');
+});
+openModalBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  mobileMenuRef.classList.remove('is-open');
 });
 },{}],"js/module.js":[function(require,module,exports) {
 var refs = {
@@ -302,7 +307,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52379" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64645" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
